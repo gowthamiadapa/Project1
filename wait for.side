@@ -1,0 +1,688 @@
+{
+  "id": "27178532-5b67-4b52-91e7-a23f3b6640d1",
+  "version": "2.0",
+  "name": "Tc002_Login_email_Validation_Invalid.",
+  "url": "https://outlook.live.com/owa/",
+  "tests": [{
+    "id": "990f2d0f-e153-4f2a-8fc6-519110f03ad7",
+    "name": "Tc002_Login_Email_Validation_invalid",
+    "commands": [{
+      "id": "85c64da8-ddb2-4fce-873f-c3cea1dacd95",
+      "comment": "",
+      "command": "open",
+      "target": "/owa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73a00d4c-6e49-447e-8e5d-a04002f960b8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1102x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3398343-9c29-4ffe-b228-9afd3a0fb415",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.auxiliary-actions .internal", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://outlook.live.com/owa/?nlp=1')])[4]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20edf9ae-1828-411a-b3b9-38993f1e6ff1",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Sign in to your Microsoft account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9274691-50c0-4d3d-80c1-0111eae04a47",
+      "comment": "",
+      "command": "click",
+      "target": "id=i0116",
+      "targets": [
+        ["id=i0116", "id"],
+        ["name=loginfmt", "name"],
+        ["css=#i0116", "css:finder"],
+        ["xpath=//input[@id='i0116']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba8ffc65-8646-45cd-b136-e1ecd08a1066",
+      "comment": "",
+      "command": "click",
+      "target": "id=i0116",
+      "targets": [
+        ["id=i0116", "id"],
+        ["name=loginfmt", "name"],
+        ["css=#i0116", "css:finder"],
+        ["xpath=//input[@id='i0116']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cb64760-d0ac-49f6-9a3d-9b5df77edadc",
+      "comment": "",
+      "command": "type",
+      "target": "id=i0116",
+      "targets": [
+        ["id=i0116", "id"],
+        ["name=loginfmt", "name"],
+        ["css=#i0116", "css:finder"],
+        ["xpath=//input[@id='i0116']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "gowthami000@gmail.com"
+    }, {
+      "id": "be679810-ea2d-45c1-84ab-c1bc79feae9d",
+      "comment": "",
+      "command": "click",
+      "target": "id=idSIButton9",
+      "targets": [
+        ["id=idSIButton9", "id"],
+        ["css=#idSIButton9", "css:finder"],
+        ["xpath=//input[@id='idSIButton9']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[4]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b522a3e-f079-4648-9fbe-9ccd14a12cfb",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=usernameError",
+      "targets": [
+        ["id=usernameError", "id"],
+        ["css=#usernameError", "css:finder"],
+        ["xpath=//div[@id='usernameError']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "That Microsoft account doesn't exist. Enter a different account or get a new one."
+    }]
+  }, {
+    "id": "0341693b-4d03-4ac4-80ee-c192119b0f94",
+    "name": "Tc003_Loigin_email_Validation_With Empty Data",
+    "commands": [{
+      "id": "f2fba544-f41b-4342-9a42-cb5ea791091c",
+      "comment": "",
+      "command": "open",
+      "target": "/owa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae8de1e6-0e68-42dd-ae45-96034ec2b912",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1105x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ac22903-220f-4357-9b4b-ad5735d369aa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.auxiliary-actions .internal", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://outlook.live.com/owa/?nlp=1')])[4]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b09e784-6321-4865-94da-f4f840498102",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#loginHeader > div",
+      "targets": [
+        ["css=#loginHeader > div", "css:finder"],
+        ["xpath=//div[@id='loginHeader']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Sign in"
+    }, {
+      "id": "35183f31-4912-49e8-9610-7ca07a578ecd",
+      "comment": "",
+      "command": "click",
+      "target": "id=i0116",
+      "targets": [
+        ["id=i0116", "id"],
+        ["name=loginfmt", "name"],
+        ["css=#i0116", "css:finder"],
+        ["xpath=//input[@id='i0116']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca974145-0bd1-4d2a-9a4a-491682b9b4b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=idSIButton9",
+      "targets": [
+        ["id=idSIButton9", "id"],
+        ["css=#idSIButton9", "css:finder"],
+        ["xpath=//input[@id='idSIButton9']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[4]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b3d421f-af4f-49e0-b7c0-9bb6e0d0e964",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=usernameError",
+      "targets": [
+        ["id=usernameError", "id"],
+        ["css=#usernameError", "css:finder"],
+        ["xpath=//div[@id='usernameError']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Enter a valid email address, phone number, or Skype name."
+    }]
+  }, {
+    "id": "2b54b70f-5093-464b-beb1-1d4237df0995",
+    "name": "Tc004_Login_MobileEntry",
+    "commands": [{
+      "id": "614fdf0f-cb02-499a-b1fe-99debc3c4820",
+      "comment": "",
+      "command": "open",
+      "target": "/owa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c81c1f5-e077-46f3-8ede-e326522ecec8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1109x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71728920-b6be-4ed8-af16-23438d378835",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.auxiliary-actions .internal", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://outlook.live.com/owa/?nlp=1')])[4]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e365d0bb-dd47-4f30-b104-daaa67262ef2",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Sign in to your Microsoft account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20f32e7b-a322-4aee-8b2b-0ba9f4618c40",
+      "comment": "",
+      "command": "click",
+      "target": "id=i0116",
+      "targets": [
+        ["id=i0116", "id"],
+        ["name=loginfmt", "name"],
+        ["css=#i0116", "css:finder"],
+        ["xpath=//input[@id='i0116']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88b601d2-78bf-4551-8865-70abe72b1f02",
+      "comment": "",
+      "command": "type",
+      "target": "id=i0116",
+      "targets": [
+        ["id=i0116", "id"],
+        ["name=loginfmt", "name"],
+        ["css=#i0116", "css:finder"],
+        ["xpath=//input[@id='i0116']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8247879905"
+    }, {
+      "id": "e4c07fb1-90ce-4b54-9c9d-0b58ad672b8e",
+      "comment": "",
+      "command": "click",
+      "target": "id=idSIButton9",
+      "targets": [
+        ["id=idSIButton9", "id"],
+        ["css=#idSIButton9", "css:finder"],
+        ["xpath=//input[@id='idSIButton9']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[4]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51e75dab-213f-4a4e-9af1-4581d057bad7",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[2]/div/div[2]/div",
+      "targets": [
+        ["css=#loginHeader > div", "css:finder"],
+        ["xpath=//div[@id='loginHeader']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Enter password"
+    }]
+  }, {
+    "id": "552aacd2-1779-449f-b48f-4de328636620",
+    "name": "Tc005_Singin page Details",
+    "commands": [{
+      "id": "a8c47e69-c8b1-4274-9ae1-4cbbd0ffc33f",
+      "comment": "",
+      "command": "open",
+      "target": "/owa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3725e8e3-347f-4a15-b292-234fa8c7dbfc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1114x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "877e4ba4-17d7-4970-95f4-0b647fb9be04",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.auxiliary-actions .internal", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://outlook.live.com/owa/?nlp=1')])[4]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee9372cd-9a7c-4247-af2e-811eb70a78b6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#loginHeader > div",
+      "targets": [
+        ["css=#loginHeader > div", "css:finder"],
+        ["xpath=//div[@id='loginHeader']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Sign in"
+    }, {
+      "id": "3b02b363-07cf-4de2-b6d4-04415505bdee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group:nth-child(1)",
+      "targets": [
+        ["css=.form-group:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "No account? Create one!"
+    }, {
+      "id": "acdee758-95df-4d87-819b-89c0cd77b5bf",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=signup",
+      "targets": [
+        ["id=signup", "id"],
+        ["linkText=Create one!", "linkText"],
+        ["css=#signup", "css:finder"],
+        ["xpath=//a[contains(text(),'Create one!')]", "xpath:link"],
+        ["xpath=//a[@id='signup']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[3]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://signup.live.com/signup?wa=wsignin1.0&rpsnv=13&ct=1662890326&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3dbdb21ff8-bc07-bd0d-a338-47caa493f5ed&id=292841&aadredir=1&whr=index.php&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015&contextid=FE3576E5756209A6&bk=1662890326&uiflavor=web&lic=1&mkt=EN-US&lc=1033&uaid=d595422604464801be15aa9e99ff371d')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create one!')]", "xpath:innerText"]
+      ],
+      "value": "Create one!"
+    }, {
+      "id": "143b9793-09bb-45b4-b3b0-2328d47ebadf",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=idA_PWD_SwitchToFido",
+      "targets": [
+        ["id=idA_PWD_SwitchToFido", "id"],
+        ["linkText=Sign in with a security key", "linkText"],
+        ["name=switchToFido", "name"],
+        ["css=#idA_PWD_SwitchToFido", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in with a security key')]", "xpath:link"],
+        ["xpath=//a[@id='idA_PWD_SwitchToFido']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[3]/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in with a security key')]", "xpath:innerText"]
+      ],
+      "value": "Sign in with a security key"
+    }]
+  }, {
+    "id": "6fd2e87c-64ec-4658-80cb-68c2089ab389",
+    "name": "Tc001_Login_Email_Validation_valid",
+    "commands": [{
+      "id": "e3368741-5a97-4ed4-b17a-b952c0ca29f9",
+      "comment": "",
+      "command": "open",
+      "target": "/owa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c23bc0aa-71e2-4b16-b578-b7b742583e46",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1094x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd53df7c-15ec-456c-8b7f-e54731d0cc96",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.auxiliary-actions .internal", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://outlook.live.com/owa/?nlp=1')])[4]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd266db1-b38c-4d5d-bd2a-ec1a5d85913f",
+      "comment": "",
+      "command": "type",
+      "target": "id=i0116",
+      "targets": [
+        ["id=i0116", "id"],
+        ["name=loginfmt", "name"],
+        ["css=#i0116", "css:finder"],
+        ["xpath=//input[@id='i0116']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "gowthamiadapa354@gmail.com"
+    }, {
+      "id": "e289006d-6c41-45ea-84ed-4f8f7437234e",
+      "comment": "",
+      "command": "click",
+      "target": "id=idSIButton9",
+      "targets": [
+        ["id=idSIButton9", "id"],
+        ["css=#idSIButton9", "css:finder"],
+        ["xpath=//input[@id='idSIButton9']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[4]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e038ed9-ce4c-4f82-95cc-ca2faf1aca2d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[2]/div/div[2]/div",
+      "targets": [
+        ["css=#loginHeader > div", "css:finder"],
+        ["xpath=//div[@id='loginHeader']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Enter password"
+    }]
+  }, {
+    "id": "bb136495-f0d3-4fb0-b826-14b8d412535a",
+    "name": "verify",
+    "commands": [{
+      "id": "b569495a-03ff-4ac2-9fbd-434f05371a4f",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "165f58de-6958-402e-bb88-c48bfa8ca922",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1094x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3ca6fc5-2bd7-4b3c-b596-ab459e1561b9",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "My Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc345e59-0d73-48ba-8d10-429065788ead",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=(//a[contains(text(),'Dresses')])[5]",
+      "targets": [
+        ["css=.sfHover > .sf-with-ul", "css:finder"],
+        ["xpath=(//a[contains(text(),'Dresses')])[5]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_category=8&controller=category'])[2]", "xpath:href"],
+        ["xpath=//div[6]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": "DRESSES"
+    }, {
+      "id": "81f41096-2c64-4b0d-96e4-347162930fdd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//a[contains(text(),'Women')]",
+      "targets": [
+        ["css=.sfHover > .sf-with-ul", "css:finder"],
+        ["xpath=//a[contains(text(),'Women')]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?id_category=3&controller=category']", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": "WOMEN"
+    }, {
+      "id": "8bc10316-5d85-4073-af04-ceb5245b5cb4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=(//a[contains(text(),'T-shirts')])[2]",
+      "targets": [
+        ["css=.sfHover > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'T-shirts')])[2]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_category=5&controller=category'])[2]", "xpath:href"],
+        ["xpath=//div[6]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": "T-SHIRTS"
+    }, {
+      "id": "5c09e24b-fe55-4ca2-991b-4711c8b95f67",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10401b0c-d040-4a9c-8e02-7f2d85236d1c",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed2dcc36-1930-4c45-b5dc-2c742c4973a1",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Login - My Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8dd7aaca-8e69-43c1-a583-32246dfed047",
+      "comment": "",
+      "command": "verifyEditable",
+      "target": "id=email_create",
+      "targets": [
+        ["id=email_create", "id"],
+        ["name=email_create", "name"],
+        ["css=#email_create", "css:finder"],
+        ["xpath=//input[@id='email_create']", "xpath:attributes"],
+        ["xpath=//form[@id='create-account_form']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "837c7f6f-0c21-48d9-8a88-7333694e5f61",
+    "name": "wait for",
+    "commands": [{
+      "id": "1e43e76d-4627-40b3-b6e0-1d01d1f1fa02",
+      "comment": "",
+      "command": "open",
+      "target": "https://outlook.live.com/owa/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f629db3-6bc1-4b79-9c2c-10fef93bfcfa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1094x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "019aa00a-302b-4c37-a6af-ceda1f398cab",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Outlook – free personal email and calendar from Microsoft",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80d64801-9be6-4fb5-8d8d-3b9c93f95f35",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.auxiliary-actions .internal", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://outlook.live.com/owa/?nlp=1')])[4]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": "50000"
+    }, {
+      "id": "0a1ade4c-7acb-4a99-8b8e-ee992d22264f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.auxiliary-actions .internal", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://outlook.live.com/owa/?nlp=1')])[4]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48147409-2029-4530-a0fe-419d5b951180",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=i0116",
+      "targets": [
+        ["id=i0116", "id"],
+        ["name=loginfmt", "name"],
+        ["css=#i0116", "css:finder"],
+        ["xpath=//input[@id='i0116']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "50000"
+    }, {
+      "id": "8725c5d2-4507-4558-a352-078d979b68dd",
+      "comment": "",
+      "command": "type",
+      "target": "id=i0116",
+      "targets": [
+        ["id=i0116", "id"],
+        ["name=loginfmt", "name"],
+        ["css=#i0116", "css:finder"],
+        ["xpath=//input[@id='i0116']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "gowthami123@gmail.com"
+    }, {
+      "id": "22db5e29-5d0f-454c-9b08-577e8c5f2eb9",
+      "comment": "",
+      "command": "click",
+      "target": "id=idSIButton9",
+      "targets": [
+        ["id=idSIButton9", "id"],
+        ["css=#idSIButton9", "css:finder"],
+        ["xpath=//input[@id='idSIButton9']", "xpath:attributes"],
+        ["xpath=//div[@id='lightbox']/div[3]/div/div/div/div[4]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "529b3d98-5e67-4c77-9faf-193c83085abf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#loginHeader > div",
+      "targets": [
+        ["css=#loginHeader > div", "css:finder"],
+        ["xpath=//div[@id='loginHeader']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c84dcdf2-bf34-43bf-a8da-6e621215a9b8",
+      "comment": "",
+      "command": "waitForText",
+      "target": "css=#loginHeader > div",
+      "targets": [
+        ["css=#loginHeader > div", "css:finder"],
+        ["xpath=//div[@id='loginHeader']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Enter password"
+    }]
+  }],
+  "suites": [{
+    "id": "2d703cf7-16ea-4cb2-9ca9-f134401e5387",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://outlook.live.com/", "https://automationpractice.com/", "https://outlook.live.com/owa/"],
+  "plugins": []
+}
